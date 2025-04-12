@@ -170,3 +170,6 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 portfolio.env
+src/assets/images/principal_vs_interest_payments.png
+src/assets/images/remaining_balance.png
+src/assets/images/principal_vs_interest_payments.png

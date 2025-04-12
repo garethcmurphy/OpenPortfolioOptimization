@@ -12,13 +12,13 @@ import pandas as pd
 from dotenv import load_dotenv
 
 # Load environment variables
-load_dotenv("mortgage_info.env")
+load_dotenv()
 
 # Constants
-LOAN_AMOUNT = float(os.getenv("LOAN_AMOUNT"))
-ANNUAL_INTEREST_RATE = float(os.getenv("ANNUAL_INTEREST_RATE")) / 100
-LOAN_TERM_YEARS = int(os.getenv("LOAN_TERM_YEARS"))
-LOAN_START_YEAR = int(os.getenv("LOAN_START_YEAR"))
+LOAN_AMOUNT = float(os.getenv("LOAN_AMOUNT", "40000"))
+ANNUAL_INTEREST_RATE = float(os.getenv("ANNUAL_INTEREST_RATE", "0.05")) / 100.
+LOAN_TERM_YEARS = int(os.getenv("LOAN_TERM_YEARS", "30"))
+LOAN_START_YEAR = int(os.getenv("LOAN_START_YEAR", "1970"))
 
 
 class MortgageCalculator:
